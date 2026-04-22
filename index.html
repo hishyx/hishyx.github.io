@@ -265,18 +265,19 @@
                                         inventory management.
                                     </p>
                                 </div>
+<div class="flex flex-row md:flex-col gap-3">
+    <a href="https://github.com/hishyx/logiafun-ecommerce" target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card/50 hover:bg-secondary transition-all text-sm font-semibold">
+        <i data-lucide="github" class="w-4 h-4"></i> Source
+    </a>
 
-                                <div class="flex flex-row md:flex-col gap-3">
-                                    <a href="https://github.com/hishyx/logiafun-ecommerce" target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card/50 hover:bg-secondary transition-all text-sm font-semibold">
-                                        <i data-lucide="github" class="w-4 h-4"></i> Source
-                                    </a>
-                                    <button disabled
-                                        class="flex items-center gap-2 px-6 py-3 rounded-xl bg-muted text-muted-foreground transition-all text-sm font-semibold cursor-not-allowed opacity-70">
-                                        <i data-lucide="external-link" class="w-4 h-4"></i> Demo Coming Soon
-                                    </button>
-                                </div>
+    <a href="https://logiafun.store" target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all text-sm font-semibold">
+        <i data-lucide="external-link" class="w-4 h-4"></i> Live Demo
+    </a>
+</div>
                             </div>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-8 border-t border-border/50">
@@ -670,6 +671,17 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>tersecting) {
                     entry.target.classList.add('visible');
                     observer.unobserve(entry.target);
                 }
