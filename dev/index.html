@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hisham Valiyapeediakkal | Backend Developer</title>
+    <meta name="description"
+        content="Developer portfolio of Hisham Valiyapeediakkal, a backend developer focusing on Node.js, Express, and MongoDB.">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="dev-page">
+    <svg class="icon-sprite" aria-hidden="true">
+        <symbol id="icon-document" viewBox="0 0 24 24">
+            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+            <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8.1L5.74 7H4v.67l8 7.76 8-7.76V7h-1.74L12 13.1Z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <path
+                d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 1.8a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z" />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+            <path
+                d="M12 .5C5.73.5.75 5.62.75 12.03c0 5.1 3.29 9.43 7.86 10.96.57.11.78-.25.78-.56v-2.14c-3.2.71-3.88-1.4-3.88-1.4-.52-1.36-1.28-1.72-1.28-1.72-1.05-.73.08-.72.08-.72 1.16.08 1.77 1.22 1.77 1.22 1.03 1.8 2.71 1.28 3.37.98.1-.76.4-1.28.73-1.57-2.55-.3-5.23-1.31-5.23-5.82 0-1.29.45-2.34 1.19-3.17-.12-.3-.52-1.5.11-3.12 0 0 .98-.32 3.18 1.21a10.8 10.8 0 0 1 5.8 0c2.2-1.53 3.17-1.21 3.17-1.21.63 1.62.23 2.82.11 3.12.74.83 1.19 1.88 1.19 3.17 0 4.52-2.69 5.51-5.25 5.81.41.37.78 1.08.78 2.18v3.18c0 .31.21.68.79.56a11.55 11.55 0 0 0 7.85-10.96C23.25 5.62 18.27.5 12 .5Z" />
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+            <path
+                d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.35V8.99h3.41v1.57h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.56V8.99h3.56v11.46ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0Z" />
+        </symbol>
+    </svg>
+
+    <header class="dev-header">
+        <a class="dev-brand" href="#top">Hisham Valiyapeediakkal</a>
+        <nav class="dev-nav" aria-label="Developer portfolio navigation">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#decisions">Technical Decisions</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#learning">Roadmap</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="dev-hero dev-section">
+            <div>
+                <div class="dev-badges">
+                    <span class="dev-badge availability">Open to Internships</span>
+                    <span class="dev-badge availability">Open to Junior Backend Roles</span>
+                </div>
+                <h1 style="margin-top: 0.75rem;">Backend Developer | Node.js, Express & MongoDB</h1>
+                <p class="dev-lead">
+                    Backend developer focused on building practical systems with Node.js, Express, MongoDB, and JavaScript. I learn by building complete applications, designing APIs, managing databases, and solving real-world backend challenges.
+                </p>
+                <div class="dev-actions">
+                    <a class="dev-button primary" href="#projects">Explore Projects</a>
+                    <a class="dev-button secondary" href="https://github.com/hishyx" target="_blank"
+                        rel="noopener noreferrer"><svg class="icon" aria-hidden="true">
+                            <use href="#icon-github"></use>
+                        </svg>GitHub Profile</a>
+                    <a class="dev-button secondary" href="Hisham_Valiyapeediakkal_Resume.pdf" download>
+                        <svg class="icon" aria-hidden="true">
+                            <use href="#icon-document"></use>
+                        </svg>Download Resume
+                    </a>
+                </div>
+                
+                <div class="dev-stats-row">
+                    <div class="dev-stat-item">
+                        <span class="dev-stat-num">5+</span>
+                        <span class="dev-stat-label">Projects Built</span>
+                    </div>
+                    <div class="dev-stat-item">
+                        <span class="dev-stat-num">100+</span>
+                        <span class="dev-stat-label">Git Commits</span>
+                    </div>
+                    <div class="dev-stat-item text-stat">
+                        <span class="dev-stat-num">Tech</span>
+                        <span class="dev-stat-label">JS • Node • Express • MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dev-profile">
+                <img src="../hisham.jpg" alt="Hisham Valiyapeediakkal">
+                <p>Backend developer building practical systems with JavaScript, Express, and databases.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="dev-section">
+            <div class="dev-heading">
+                <p class="dev-eyebrow">Skills & Tools</p>
+                <h2>Primary developer tools & concept focus areas.</h2>
+            </div>
+
+            <div class="dev-skill-grid three">
+                <div class="dev-skill-card">
+                    <h3>Backend Focus</h3>
+                    <ul class="dev-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>MongoDB basics</li>
+                        <li>Session authentication</li>
+                    </ul>
+                </div>
+                <div class="dev-skill-card">
+                    <h3>Frontend & Tools</h3>
+                    <ul class="dev-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>EJS / HBS templates</li>
+                        <li>Git & GitHub</li>
+                        <li>Postman API testing</li>
+                    </ul>
+                </div>
+                <div class="dev-skill-card highlighted-learning">
+                    <h3>Currently Learning</h3>
+                    <ul class="dev-list">
+                        <li>React</li>
+                        <li>PostgreSQL</li>
+                        <li>Docker</li>
+                        <li>System Design Fundamentals</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="dev-section">
+            <div class="dev-heading">
+                <p class="dev-eyebrow">Projects</p>
+                <h2>Practical backend applications built from scratch.</h2>
+            </div>
+
+            <div class="dev-project-grid">
+                <!-- E-Commerce Project -->
+                <article class="dev-project-card featured">
+                    <div class="dev-project-top">
+                        <div>
+                            <div class="dev-title-row">
+                                <h3>E-Commerce Web Application</h3>
+                                <span class="dev-status">Featured Project</span>
+                            </div>
+                            <p>Built an e-commerce application with 20+ API routes, session-based authentication, category filtering, and Razorpay checkout integration.</p>
+                        </div>
+                        <div class="dev-card-actions">
+                            <a class="dev-btn-link code" href="https://github.com/hishyx/logiafun-ecommerce" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>Code</a>
+                            <a class="dev-btn-link demo" href="https://logiafun.store" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-external"></use></svg>Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-rewrite-grid">
+                        <div class="rewrite-block">
+                            <strong>Problem:</strong>
+                            <p>Setting up custom product variant updates (like size/color selections) without mixing up cart lists or inventory values.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Solution:</strong>
+                            <p>Designed structured cart schemas that store variant object IDs, and built validation checks before checkout confirmation.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Implementation:</strong>
+                            <p>Used Node.js/Express controllers, session cookies to hold temporary carts, and Razorpay API parameters for checkout transactions.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Outcome:</strong>
+                            <p>Built a robust e-commerce application with 20+ API routes, session-based authentication, category filtering, and Razorpay checkout integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="dev-stack">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Session Storage</span>
+                        <span>REST Routes</span>
+                        <span>EJS Template</span>
+                        <span>Razorpay API</span>
+                    </div>
+                </article>
+
+                <!-- User Management Project -->
+                <article class="dev-project-card featured">
+                    <div class="dev-project-top">
+                        <div>
+                            <div class="dev-title-row">
+                                <h3>Admin User Management Portal</h3>
+                                <span class="dev-status">Completed Project</span>
+                            </div>
+                            <p>Developed a role-based administration system supporting CRUD operations, session validation, and protected routes.</p>
+                        </div>
+                        <div class="dev-card-actions">
+                            <a class="dev-btn-link code" href="https://github.com/hishyx/user-management-node-mongo-js-fulldomain" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-rewrite-grid">
+                        <div class="rewrite-block">
+                            <strong>Problem:</strong>
+                            <p>Endpoints allowing user details to be modified must be protected against malicious API calls without complex overhead.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Solution:</strong>
+                            <p>Created a custom routing middleware that verifies the user role saved in the session store before rendering admin actions.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Implementation:</strong>
+                            <p>Built RESTful routes linked to database CRUD handlers, implementing input validation to block empty or invalid values.</p>
+                        </div>
+                        <div class="rewrite-block">
+                            <strong>Outcome:</strong>
+                            <p>Developed a role-based administration system supporting CRUD operations, session validation, and protected routes.</p>
+                        </div>
+                    </div>
+
+                    <div class="dev-stack">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>HBS Templates</span>
+                        <span>Session Authentication</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Technical Decisions Section -->
+        <section id="decisions" class="dev-section">
+            <div class="dev-heading">
+                <p class="dev-eyebrow">Engineering Choices</p>
+                <h2>Technical Decisions & Trade-offs</h2>
+                <p>Why I chose these technologies for my projects.</p>
+            </div>
+            <div class="dev-decisions-grid">
+                <article class="decision-card">
+                    <h3>MongoDB vs SQL</h3>
+                    <p>Chosen because the JSON-like document structure in MongoDB aligns naturally with JavaScript/Node.js objects. It allowed me to quickly iterate on dynamic e-commerce schemas (like varied product features) while studying backend data structures.</p>
+                </article>
+                <article class="decision-card">
+                    <h3>Session-Based Auth vs JWT</h3>
+                    <p>I selected session cookies (using `express-session` and `connect-mongo`) because server-side sessions simplify session invalidation and role tracking directly on the server, which works well for MVC layouts.</p>
+                </article>
+                <article class="decision-card">
+                    <h3>MVC Architecture</h3>
+                    <p>Dividing the codebase into Models, Views, and Controllers prevents route pollution. Separating query logic from response handling makes the code easier to debug and scale as new routes are added.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Architecture Diagrams Section -->
+        <section id="architecture" class="dev-section">
+            <div class="dev-heading">
+                <p class="dev-eyebrow">System Flow</p>
+                <h2>Application Architecture Layout</h2>
+                <p>How requests and data move through my backend applications.</p>
+            </div>
+            <div class="diagram-container">
+                <div class="arch-flow">
+                    <div class="arch-node client">
+                        <strong>Client (Browser)</strong>
+                        <span>HTML / CSS UI</span>
+                    </div>
+                    <div class="arch-arrow">▼</div>
+                    <div class="arch-node middleware">
+                        <strong>Routes & Middleware</strong>
+                        <span>Authentication / Session Check</span>
+                    </div>
+                    <div class="arch-arrow">▼</div>
+                    <div class="arch-node controller">
+                        <strong>Controllers</strong>
+                        <span>Request validation & routing logic</span>
+                    </div>
+                    <div class="arch-arrow">▼</div>
+                    <div class="arch-node services">
+                        <strong>Service Layer</strong>
+                        <span>Business rules / external integrations</span>
+                    </div>
+                    <div class="arch-arrow">▼</div>
+                    <div class="arch-node models">
+                        <strong>Models & Schemas</strong>
+                        <span>Data validation & rules</span>
+                    </div>
+                    <div class="arch-arrow">▼</div>
+                    <div class="arch-node database">
+                        <strong>Database (MongoDB)</strong>
+                        <span>Persistent storage</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Journey Section -->
+        <section id="learning" class="dev-section">
+            <div class="dev-heading">
+                <p class="dev-eyebrow">Roadmap</p>
+                <h2>My Learning Journey & Goals</h2>
+                <p>How I study and what I plan to build next.</p>
+            </div>
+            <div class="journey-content">
+                <div class="journey-timeline">
+                    <div class="journey-item">
+                        <div class="journey-badge">Current Focus</div>
+                        <h3>Deepening Core Backend Knowledge</h3>
+                        <p>Studying system design principles, index optimization in MongoDB, database normalization, and handling concurrent requests gracefully.</p>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-badge">Up Next</div>
+                        <h3>SQL Databases & Docker</h3>
+                        <p>Learning PostgreSQL to understand relational schemas, table joins, and transactional consistency, alongside containerizing apps with Docker.</p>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-badge">Future Goal</div>
+                        <h3>Caching & Queues</h3>
+                        <p>Planning to introduce Redis caching for fast session lookups and RabbitMQ for asynchronous background tasks.</p>
+                    </div>
+                    <!-- 
+                    <div class="journey-item">
+                        <div class="journey-badge">DSA Practice</div>
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Solving Data Structures & Algorithms problems daily using JavaScript to prepare for technical interviews.</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="dev-section dev-contact">
+            <p class="dev-eyebrow">Connect</p>
+            <h2>Interested in working together or hiring an intern?</h2>
+            <div class="dev-contact-grid">
+                <a href="mailto:hishyx.dev@gmail.com">
+                    <strong><svg class="icon" aria-hidden="true">
+                            <use href="#icon-mail"></use>
+                        </svg>Email</strong>
+                    <span>hishyx.dev@gmail.com</span>
+                </a>
+                <a href="https://github.com/hishyx" target="_blank" rel="noopener noreferrer">
+                    <strong><svg class="icon" aria-hidden="true">
+                            <use href="#icon-github"></use>
+                        </svg>GitHub</strong>
+                    <span>@hishyx</span>
+                </a>
+                <a href="https://www.linkedin.com/in/hishamvaliyapeediakkal" target="_blank" rel="noopener noreferrer">
+                    <strong><svg class="icon" aria-hidden="true">
+                            <use href="#icon-linkedin"></use>
+                        </svg>LinkedIn</strong>
+                    <span>Hisham Valiyapeediakkal</span>
+                </a>
+                <a href="Hisham_Valiyapeediakkal_Resume.pdf" download>
+                    <strong><svg class="icon" aria-hidden="true">
+                            <use href="#icon-document"></use>
+                        </svg>Resume</strong>
+                    <span>Download PDF</span>
+                </a>
+            </div>
+            <p class="dev-contact-note">
+                I'm open to junior backend roles, developer internships, and freelance projects. Let's connect.
+            </p>
+        </section>
+    </main>
+
+    <footer class="dev-footer">
+        <p>Built with Care</p>
+        <span>© 2026 Hisham. All rights reserved.</span>
+    </footer>
+</body>
+
+</html>
