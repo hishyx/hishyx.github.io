@@ -1136,6 +1136,27 @@ p {
   gap: 0.8rem;
 }
 
+/* Keep project action buttons compact and aligned */
+.dev-card-actions {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dev-card-actions a {
+  max-width: max-content;
+}
+
+.dev-btn-link {
+  white-space: nowrap;
+  align-items: center;
+}
+
+.dev-stats-row {
+  margin-top: 1.35rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--dev-border);
+}
+
 .dev-button,
 .dev-card-actions a,
 .dev-contact-links a,
@@ -1257,6 +1278,11 @@ p {
 .dev-contact {
   margin-bottom: 4rem;
   text-align: center;
+}
+
+/* Add a small gap between contact links and the note */
+.dev-contact-note {
+  margin-top: 1.25rem;
 }
 
 .dev-contact-grid a {
