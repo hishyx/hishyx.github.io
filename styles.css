@@ -384,6 +384,50 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.recent-client {
+  display: grid;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.recent-client-heading h2 {
+  margin-bottom: 0;
+}
+
+.recent-client-proof {
+  display: grid;
+  gap: 1rem;
+}
+
+.recent-client blockquote {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(17, 24, 34, 0.82);
+}
+
+.recent-client blockquote p {
+  margin-bottom: 0.65rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.recent-client cite {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: normal;
+}
+
+.recent-client .check-list li::before {
+  content: "\2713";
+  width: auto;
+  height: auto;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 800;
+}
+
 .case-study,
 .project-card,
 .service-grid article,
@@ -686,6 +730,22 @@ p {
 .pricing-card h3 {
   margin: 0.35rem 0 0.65rem;
   font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.pricing-features {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  list-style: none;
+}
+
+.pricing-features li::before {
+  content: "\2713";
+  margin-right: 0.5rem;
+  color: var(--primary);
+  font-weight: 800;
 }
 
 .pricing-card.featured {
@@ -1592,6 +1652,39 @@ body:not(.dev-page) .section-heading p {
   margin-right: auto;
 }
 
+body:not(.dev-page) .recent-client {
+  grid-template-columns: 1fr;
+  padding-top: 0;
+}
+
+body:not(.dev-page) .recent-client-heading h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+body:not(.dev-page) .recent-client-proof {
+  padding: 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+body:not(.dev-page) .recent-client blockquote {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  padding-top: 1rem;
+}
+
+body:not(.dev-page) .recent-client blockquote p {
+  color: var(--text);
+}
+
+body:not(.dev-page) .recent-client cite {
+  color: var(--subtle);
+}
+
 body:not(.dev-page) .featured-work {
   border-top: 0;
 }
@@ -1897,6 +1990,16 @@ body:not(.dev-page) .pricing-card span {
   color: var(--accent);
 }
 
+body:not(.dev-page) .pricing-features {
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+body:not(.dev-page) .pricing-features li::before {
+  color: var(--accent);
+}
+
 body:not(.dev-page) .pricing-card.featured {
   border-color: var(--text);
   background: #f4f7fb;
@@ -2025,7 +2128,7 @@ body:not(.dev-page) .site-footer {
 
 @media (min-width: 720px) {
   body:not(.dev-page) .proof-strip {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   body:not(.dev-page) .proof-strip div {
@@ -2041,6 +2144,10 @@ body:not(.dev-page) .site-footer {
   body:not(.dev-page) .case-columns,
   body:not(.dev-page) .why-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body:not(.dev-page) .recent-client {
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
   }
 }
 
